@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    
+
+    <nav class="navbar navbar-expand-lg  navbar-dark">
+        <a class="navbar-brand" style="color:rgb(198, 42, 42)" href= "<?php echo base_ur('principal');?>"><h1>SmartPhones</h1></a>
+       
+          <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a  class="nav-link" href="<?php echo base_url('principal'); ?>" ><b>Inicio</b></a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="<?php echo base_url('consulta'); ?>" ><b>Catálogo</b></a>
+            </li>
+           
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>Marcas</b>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="<?php echo base_url('samsung'); ?>"><b>Samsung</b> </a>
+               <a class="dropdown-item" href="<?php echo base_url('motorola'); ?>"><b>Motorola</b></a>
+               <a class="dropdown-item" href="<?php echo base_url('lg'); ?>"><b>LG</b></a>
+                
+                
+              </div>
+            </li>
+         
+      
+        
+      
+             <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url('comercializacion'); ?>"><b>Comercialización</b></a>
+            </li>
+           
+           <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url('contacto'); ?>"><b>Contacto</b>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url('terminos_y_usos'); ?>"><b>Términos y usos</b></a>
+            </li>
+           
+           <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url('empresa'); ?>"><b>¿Quiénes somos?</b></a>
+            </li>
+           
+          </ul>
+          
+   
+          <br>   <br>   <br>   <br>   <br>     </br>
+          <div class="card p-3 text-right">
+            <blockquote class="blockquote mb-0">
+              <div align="center"><h1 class="card-title"><p style="color:#FF0000";><em><b>¡ÚLTIMAS OFERTAS!</b></em></p></h1></div>
+              
+              
+            </blockquote>
+          </div>
+          <br>   <br>   </br>
+
+          <div class="card-columns">
+            <div class="card">
+             <center><img src="./imagenes/a.jpg" class="d-block w-50" alt="..." bgcolor=red></center>
+              <div class="card-body">
+                <h4 class="card-title"><b><a  style="color:black">Samsung Galaxy S9 Plus</a></b></h4>
+                <p class="card-text"><b><h4><p style="color:red;"><strike>$350.000</strike> | $70.000</h4></p></b></p>
+              </div>
+            </div>
+            <br>   <br>   <br>   <br>   <br>   <br>  </br>
+            <div class="card">
+             <center><img src="./imagenes/b.jpg" class="d-block w-50" alt="..." bgcolor=red></center>
+              <div class="card-body">
+                <h4 class="card-title"><b><a  style="color:black">Samsung Galaxy J4 Plus</a></b></h4>
+                <p class="card-text"><b><h4><p style="color:red;"><strike>$90.000</strike> | $22.500</h4></p></b></p>
+              </div><br>   <br>   <br>   <br>   <br>   <br>  </br>
+            </div>
+            <div class="card">
+              <center><img src="./imagenes/c.jpg" class="d-block w-50"alt="..."></center>
+              <div class="card-body">
+                <h4 class="card-title"><b><a  style="color:black">Moto E5</a></b></h4>
+                <p class="card-text"><b><h4><p style="color:red;"><strike>$88.999</strike> | $22.249,75</p></h4></b></p>
+               
+              </div>
+            </div>
+            <br>   <br>   <br>   <br>   <br>   <br>  </br>
+          
+          </div>
+          
+
+                    
+                 
+               
+            <script type="text/javascript" src="assets/js/bootstrap.js" > </script>
+          
+        
+          <footer>
+            <div class="iconos-sociales">
+            
+            <style>.iconos-sociales img{ 
+            transition:all 0.5s ease-out;}
+            .iconos-sociales img:hover{
+            transform: rotate(360deg);
+            }</style>
+            
+            <a href="https://www.facebook.com" target= "_blank">
+            <H1 align="center"> <img alt="Facebook" height="25"  width="25"  src="./imagenes/face.jpg"  title="Facebook" /></a>
+            
+            <a href="https://www.instagram.com" target= "_blank"> <img alt="Instagram!" height="25" width="25" src="./imagenes/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" title="Instagram!"/></a>
+            
+            
+            <a href="https://www.twitter.com" target="_blank"> <img alt="Twitter!" height="25" width="25" src="./imagenes/Logo_of_Twitter.svg.png" title="Twitter!"/></a>  
+            
+            <a href="https://www.youtube.com" target="_blank"> <img alt="YouTube!" height="25" width="25" src="./imagenes/youtube.png" title="Youtube!"/></a>  
+            
+            
+            
+            <h5><P align="right"><a  style="color:#747070">Copyright © 2023 SmartPhones S.R.L.</a></h5>
+            
+            
+            <style type="text/css">
+            body {
+            background:#3b2d2e2a;
+            background-attachment: fixed;
+            } 
+            #fbfbfb
+             .card img {
+                margin: 0 auto;}
+            
+                .card-columns {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .card {
+                text-align: center;
+            }
+            
+            .navbar-dark .navbar-nav .nav-link {
+                color: #771313;
+            }
+            
+            
+            ul.navbar-nav.mr-auto {
+                margin: 0 auto;
+            }
+            </style>
+              
+        
+            </footer>
+             
+  </body> 
+</html>

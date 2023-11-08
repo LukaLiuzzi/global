@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      div {
+        display: flex;
+        place-content: center;
+        margin: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    </style>
+
+    <div>
+      <h1>Contacto</h1>
+    </div>
+    <div>
+      <form id="form">
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="query">Consulta</label>
+          <textarea id="query"></textarea>
+        </div>
+        <div>
+          <button>Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="contenedor">
+      <button id="boton">Haceme click</button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div>
+      <form id="form-registro">
+        <label for="name-registro">Nombre</label>
+        <input type="text" id="name-registro" />
+        <label for="email-registro">Email</label>
+        <input type="email" id="email-registro" />
+
+        <label for="age-registro">Edad</label>
+        <input type="number" id="age-registro" />
+
+        <label for="password-registro">Contraseña</label>
+        <input type="password" id="password-registro" />
+
+        <label for="password-registro-confirmacion">Confirmar contraseña</label>
+        <input type="password" id="password-registro-confirmacion" />
+
+        <button>Enviar</button>
+      </form>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="index.js"></script>
+  </body>
+</html>
