@@ -1,0 +1,69 @@
+/* Selector de clases */
+.seccion_informacion_subtitulo {
+    color: blueviolet;
+}
+
+.seccion_informacion_texto {
+    text-decoration: underline;
+}
+
+/* Selector de elemento */
+div {
+    background-color: burlywood;
+}
+
+p {
+    color: brown;
+}
+
+/* Selector de id */
+#subtitulo {
+    color: chartreuse;
+}
+
+#mas_info {
+    background-color: black;
+    color: white;
+}
+
+/* Selector de atributo */
+p[title="informacion"] {
+    color: black;
+}
+
+/* Selectores agrupados */
+h2, p {
+    padding-left: 20px;
+}
+
+/* Esto */
+.seccion_informacion_subtitulo {
+    background-color: aqua;
+}
+
+.seccion_informacion_texto {
+    background-color: aqua;
+}
+
+/* Es lo mismo que esto */
+.seccion_informacion_subtitulo, .seccion_informacion_texto {
+    background-color: antiquewhite;
+}
+
+/* Selectores descendentes (hijos) */
+
+.contenedor_imagen_informacion img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Especificidad y cascada */
+/* Peso de especifidad: ids: 3, clases: 2, elementos: 1 */
+div.contenedor_imagen_informacion {
+    background-color: red;
+}
+
+div#contenedor-imagen {
+    background-color: green;
+}
+
