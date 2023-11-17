@@ -1,0 +1,34 @@
+/* Prefijos propietarios */
+.seccion_informacion_texto {
+    -webkit-backdrop-filter: blur(10px); /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+    -ms-flex: auto; /* IE 10, Edge */
+}
+
+/* Box sizing */
+html, * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+/* Box model */
+p {
+    margin: 0;
+}
+
+.uno {
+    width: 250px;
+    height: 150px;
+    background-color: aquamarine;
+    border: 1px solid burlywood;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.dos {
+    width: 250px;
+    height: 150px;
+    background-color: bisque;
+}
