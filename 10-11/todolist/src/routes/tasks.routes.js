@@ -1,8 +1,10 @@
 import { Router } from "express"
 import {
   createTask,
+  deleteTask,
   getAllTasks,
   getTask,
+  updateTask,
 } from "../controllers/tasks.controllers.js"
 
 const tasksRouter = Router()
@@ -13,12 +15,8 @@ tasksRouter.get("/:id", getTask)
 
 tasksRouter.post("/", createTask)
 
-tasksRouter.put("/:id", (req, res) => {
-  res.send(`Task ${req.params.id} updated`)
-})
+tasksRouter.put("/:id", updateTask)
 
-tasksRouter.delete("/:id", (req, res) => {
-  res.send(`Task ${req.params.id} deleted`)
-})
+tasksRouter.delete("/:id", deleteTask)
 
 export { tasksRouter }

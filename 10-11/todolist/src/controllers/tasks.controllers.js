@@ -1,9 +1,11 @@
-import fs from "fs/promises"
-import path from "path"
+import { Task } from "../models/task.model.js"
 
 export const getAllTasks = async (req, res) => {
   try {
-    const tasks = await fs.readFile(`${path.resolve()}/src/tasks.json`, "utf-8")
+    const tasks = await Task.find()
+    if (!tasks) {
+      return res.status(400).json({ message: "No se encontraron tareas" })
+    }
     res.json(tasks)
   } catch (error) {
     console.error(error)
@@ -13,8 +15,8 @@ export const getAllTasks = async (req, res) => {
 
 export const getTask = async (req, res) => {
   try {
-    const tasks = await fs.readFile(`${path.resolve()}/src/tasks.json`, "utf-8")
-    const task = tasks.find((task) => task.id === req.params.id)
+    const { id } = req.params
+    const task = await Task.findById(id)
     if (task) {
       res.json(task)
     } else {
@@ -29,30 +31,45 @@ export const getTask = async (req, res) => {
 export const createTask = async (req, res) => {
   try {
     const { title, content } = req.body
-    const tasks = await fs.readFile(`${path.resolve()}/src/tasks.json`, "utf-8")
 
-    const newTask = {
-      id: crypto.randomUUID(),
-      date: Date.now(),
-      title,
-      content,
-      done: false,
-    }
-    const parsedTasks = JSON.parse(tasks)
-    parsedTasks.push(newTask)
-    console.log(parsedTasks)
-    await fs.writeFile(
-      `${path.resolve()}/src/tasks.json`,
-      JSON.stringify(tasks),
-      "utf-8"
-    )
-    res.json(newTask)
+    const newTask = new Task({ title, content })
+    const taskSaved = await newTask.save()
+    res.json(taskSaved)
   } catch (error) {
     console.error(error)
     res.status(500).json({ message: "Server error" })
   }
 }
 
-export const updateTask = async (req, res) => {}
+export const updateTask = async (req, res) => {
+  try {
+    const { id } = req.params
+    const { title, content } = req.body
+    const updatedTask = await Task.findByIdAndUpdate(
+      id,
+      { title, content },
+      { new: true }
+    )
+    if (!updatedTask) {
+      return res.status(400).json({ message: "No se encontro la tarea" })
+    }
+    res.json(updatedTask)
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({ message: "Server error" })
+  }
+}
 
-export const deleteTask = async (req, res) => {}
+export const deleteTask = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deletedTask = await Task.findByIdAndDelete(id)
+    if (!deletedTask) {
+      return res.status(400).json({ message: "No se encontro la tarea" })
+    }
+    res.json(deletedTask)
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({ message: "Server error" })
+  }
+}
