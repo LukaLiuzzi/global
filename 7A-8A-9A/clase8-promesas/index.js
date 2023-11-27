@@ -90,5 +90,3 @@ pedirProductos().then((res) => {
   productos = res
   renderizarProductos(productos)
 })
-
-// AJAX
