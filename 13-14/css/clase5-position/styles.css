@@ -1,0 +1,41 @@
+body {
+    background-color: #fff;
+    min-height: 200vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.rosa {
+    background-color: #222;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+}
+
+.rojo {
+    background-color: red;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.verde {
+    background-color: green;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.amarillo {
+    background-color: yellow;
+}

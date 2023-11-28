@@ -95,6 +95,10 @@ body {
     border-radius: 3px;
 }
 
+.nav-item:hover {
+    background-color: rgb(243, 150, 38);
+}
+
 .nav-item a {
     color: black;
     font-size: 30px;
@@ -125,4 +129,76 @@ h1 {
     background-color: rgb(225, 161, 51);
     padding: 10px;
     text-align: center;
+}
+
+/* CONTACTO */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    height: 100vh;
+}
+
+.contact-form {
+    background-color: rgb(225, 161, 51);
+    padding: 50px;
+    padding-top: 0px;
+    border-radius: 10px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-division {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-division label {
+    font-size: 25px;
+}
+
+.form-division input {
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+textarea {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 50px;
+    max-height: 500px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.form-division button {
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(246, 183, 106);
+    cursor: pointer;
 }

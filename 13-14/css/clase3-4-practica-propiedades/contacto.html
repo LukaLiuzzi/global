@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./index.html">Inicio</a></li>
+          <li class="nav-item"><a href="#">Productos</a></li>
+          <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-container">
+        <form class="contact-form">
+          <h1>Contacto</h1>
+          <div class="form-division">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="form-division">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="luka@example.com"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-division textarea-container">
+            <label for="query">Consulta</label>
+            <textarea name="query" id="query"></textarea>
+          </div>
+          <div class="form-division">
+            <button>Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>2023 - Todos los derechos reservados</p>
+      <span>Desarrollado por Luka Liuzzi</span>
+    </footer>
+  </body>
+</html>
