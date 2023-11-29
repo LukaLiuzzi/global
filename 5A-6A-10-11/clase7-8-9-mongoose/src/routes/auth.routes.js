@@ -1,4 +1,7 @@
 import { Router } from "express"
+import { login, logout, register } from "../controllers/auth.controllers.js"
+import { validateSchema } from "../middlewares/validateSchema.js"
+import { userSchema } from "../lib/validations.js"
 // GET obtener un recurso
 // POST crear un recurso
 // PUT actualizar un recurso
@@ -7,8 +10,8 @@ import { Router } from "express"
 
 const authRouter = Router()
 
-authRouter.post("/register")
-authRouter.post("/login")
-authRouter.post("/logout")
+authRouter.post("/register", validateSchema(userSchema), register)
+authRouter.post("/login", login)
+authRouter.post("/logout", logout)
 
 export { authRouter }

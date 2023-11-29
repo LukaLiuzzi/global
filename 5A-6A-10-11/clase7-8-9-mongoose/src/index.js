@@ -28,6 +28,17 @@ app.use(
 
 app.use(cookieParser())
 
+// Trackeo de endpoints visitados
+// app.use((req, res, next) => {
+//   if (req.session.visited === undefined) {
+//     req.session.visited = []
+//   } else {
+//     req.session.visited.push(req.url)
+//   }
+//   console.log(req.session)
+//   next()
+// })
+
 app.use("/users", usersRouter)
 app.use("/auth", authRouter)
 app.use("/products", productsRouter)
