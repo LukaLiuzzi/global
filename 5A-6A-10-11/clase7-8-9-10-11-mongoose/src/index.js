@@ -6,6 +6,10 @@ import { connectDB } from "./config/db.js"
 import { usersRouter } from "./routes/users.routes.js"
 import { productsRouter } from "./routes/products.routes.js"
 import { authRouter } from "./routes/auth.routes.js"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const app = express()
 
@@ -27,6 +31,8 @@ app.use(
 )
 
 app.use(cookieParser())
+
+app.use("/", express.static(path.join(__dirname, "../public")))
 
 // Trackeo de endpoints visitados
 // app.use((req, res, next) => {

@@ -1,4 +1,8 @@
 import Product from "../models/products.model.js"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export const getAllProducts = async (req, res) => {
   try {
@@ -12,10 +16,10 @@ export const getAllProducts = async (req, res) => {
 
 export const createProduct = async (req, res) => {
   try {
-    const { title, price, description, stock, thumbnail, category } = req.body
+    const { title, price, description, stock, category } = req.body
 
     // Validar que los datos requeridos estén presentes
-    if (!title || !price || !description || !stock || !thumbnail || !category) {
+    if (!title || !price || !description || !stock || !category) {
       return res.status(400).json({ message: "Faltan datos requeridos" })
     }
 
@@ -40,7 +44,7 @@ export const createProduct = async (req, res) => {
       price,
       description,
       stock,
-      thumbnail,
+      thumbnail: req.file.filename,
       category,
     })
     // Guardar el producto en la DB

@@ -6,6 +6,7 @@ import {
   getAllProducts,
   getOneProduct,
 } from "../controllers/products.controller.js"
+import { upload } from "../lib/upload.js"
 
 // GET obtener un recurso
 // POST crear un recurso
@@ -17,7 +18,7 @@ const productsRouter = Router()
 
 productsRouter.get("/", getAllProducts)
 
-productsRouter.post("/", createProduct)
+productsRouter.post("/", upload.single("thumbnail"), createProduct)
 
 productsRouter.get("/:id", getOneProduct)
 
