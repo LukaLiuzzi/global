@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>TODO LIST</h1>
+
+    <section>
+      <form id="form">
+        <label for="title">Titulo</label>
+        <input type="text" id="title" name="title" placeholder="Titulo" />
+        <label for="content">Contenido</label>
+        <textarea
+          id="content"
+          name="content"
+          placeholder="Contenido"
+        ></textarea>
+        <button>Guardar tarea</button>
+      </form>
+
+      <div id="tasks"></div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
