@@ -38,13 +38,14 @@ export const createProduct = async (req, res) => {
       return res.status(400).json({ message: "Categoría no permitida" })
     }
 
+    const thumbnailPath = `/public/uploads/${req.file.filename}`
     // Crear el producto
     const product = new Product({
       title,
       price,
       description,
       stock,
-      thumbnail: req.file.filename,
+      thumbnail: thumbnailPath,
       category,
     })
     // Guardar el producto en la DB
