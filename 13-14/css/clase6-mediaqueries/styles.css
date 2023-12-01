@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #222;
+    color: azure;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    font-weight: bold;
+}
+
+.nav-list li {
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section div {
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.info-messi {
+    border: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 480px 768px 1024px 1200px 1920px += => 2k - 4k - televisores */
+@media screen and (min-width: 768px) {
+    .nav-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-messi {
+        display: flex;
+    }
+
+    p {
+        max-width: 550px;
+        line-height: 40px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    p {
+        font-size: 20px;
+        max-width: 550px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    img {
+        max-height: 400px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 50px;
+    }
+}
