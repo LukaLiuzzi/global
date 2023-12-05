@@ -1,0 +1,80 @@
+/* selector {
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+} */
+
+/* Selectores de etiqueta */
+p {
+    color: red;
+}
+
+h2 {
+    color: coral;
+}
+
+/* Selectores de clases */
+.parrafo {
+    color: black;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.hero {
+    background-color: yellowgreen;
+}
+
+/* Selectores de id */
+#subtitulo {
+    background-color: aqua;
+}
+
+#imagen-principal {
+    border: 4px solid black;
+}
+
+/* Selectores descendentes */
+header nav ul li {
+    background-color: blueviolet;
+}
+
+/* Selectores de atributo */
+img[src] {
+    border: 4px solid red;
+}
+
+img[src="https://via.placeholder.com/600"] {
+    border: 4px solid red;
+}
+/* Selectores de agrupados */
+
+/* .parrafo {
+    font-size: 40px;
+}
+li {
+    font-size: 40px;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 40px;
+} */
+
+.parrafo, li, h1, h2 {
+    font-size: 40px;
+}
+
+body {
+    background-color: #222;
+}
