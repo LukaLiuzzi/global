@@ -1,0 +1,141 @@
+/* RESETEO ESTILOS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: bisque;
+}
+
+/* HEADER */
+.header {
+    background-color: rgb(255, 178, 83);
+    font-size: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu li, .nav-menu li a {
+    color: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.nav-menu li:hover {
+    background-color: bisque;
+}
+
+/* CONTENIDO PRINCIPAL - MAIN */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: rgb(255, 178, 83);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.card div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-weight: bold;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    background-color: rgb(255, 178, 83);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* CONTACTO */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(255, 178, 83);
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+form div label {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+form div input, form div textarea {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: bisque;
+    color: black;
+    font-size: 20px;
+}
+
+form div input:focus, form div textarea:focus {
+    outline: none;
+}
