@@ -57,3 +57,43 @@ let edadAmigo = "22" // Esto es un string!!
 // Boolean => true o false
 let esMayorDeEdad = true // => true = verdadero
 let estamosEn2030 = false // => false = falso
+
+// Operaciones basucas
+const numero1 = 10
+const numero2 = 5
+
+// Suma
+const suma = numero1 + numero2
+console.log("Suma: ", suma)
+
+// Resta
+const resta = numero1 - numero2
+console.log("Resta: ", resta)
+
+// Multiplicacion
+const multiplicacion = numero1 * numero2
+console.log("Multiplicacion: ", multiplicacion)
+
+// Division
+const division = numero1 / numero2
+console.log("Division: ", division)
+
+// Concatenacion de strings
+const palabra1 = "Hola "
+const palabra2 = "Luka"
+const numero = 4
+const saludo = palabra1 + palabra2
+console.log(saludo)
+
+// Concatenacion de strings con numeros
+const concatenacion = palabra2 + numero
+console.log(concatenacion)
+console.log("Hola como estas " + palabra2)
+
+// prompt => Ventana que le pide al usuario que ingrese un valor
+console.clear()
+const nombreDelUsuario = prompt("Ingrese su nombre")
+console.log("Hola " + nombreDelUsuario + ", como estas?")
+
+// alert => Ventana que le muestra un mensaje al usuario
+alert("Hola " + nombreDelUsuario + ", como estas?")
