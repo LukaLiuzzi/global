@@ -61,8 +61,8 @@
 // Operadores logicos
 // && => AND
 // || => OR
-// ?? => Nullish Coalescing Operator
 // ! => NOT
+// ?? => Nullish Coalescing Operator
 
 const condicionAND = 10 < 5 && 5 > 3
 console.log(condicionAND)
@@ -100,3 +100,13 @@ Pedir un texto mediante prompt, y si es igual a "Hola" mostrar un alerta por con
 Pedir un número por prompt y evaluar si está entre 10 y 50. En caso positivo mostrar un alert.
  */
 // const numero = Number("6")
+
+let temperaturaCorporal = prompt("ingrese su temperatura corporal ")
+
+// if parseInt(temperaturaCorporal) > 37 alert('tienes fiebre') && <40
+// else alert('no tienes fiebre')
+if (parseInt(temperaturaCorporal) > 37 && parseInt(temperaturaCorporal) < 40) {
+  alert("tienes fiebre")
+} else {
+  alert("no tienes fiebre")
+}
