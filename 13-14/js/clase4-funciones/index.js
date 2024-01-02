@@ -150,3 +150,98 @@ if (logueado) {
 } else {
   console.log("No te pudiste loguear, intenta nuevamente")
 }
+
+// ==============================================
+console.clear()
+// Scope
+// const nombre = "Luka"
+
+// function saludar() {
+//   const nombre = "Juan"
+//   console.log(`Hola ${nombre}`)
+// }
+
+// function despedir() {
+//   const nombre = "Pedro"
+//   console.log(`Chau ${nombre}`)
+// }
+
+// const nombre = "Maria"
+
+// function saludar() {
+//   const nombre = "Juan"
+//   console.log(nombre)
+// }
+
+// function despedir() {
+//   const nombre = "Luka"
+//   console.log(nombre)
+// }
+
+// saludar()
+// despedir()
+
+// Funciones anonimas
+// Forma comun
+// function saludar() {
+//   const nombre = "Juan"
+//   console.log(`Hola ${nombre}`)
+// }
+// Anonimas
+const suma = function (a, b) {
+  return a + b
+}
+
+const resultado = suma(10, 5)
+
+console.log(resultado)
+
+// Funciones flecha (arrow functions)
+const resta = (a, b) => {
+  return a - b
+}
+const res = resta(10, 5)
+console.log(res)
+
+// Hoisting
+prueba()
+
+function prueba() {
+  console.log("Hola")
+}
+
+// Las funciones flecha no tienen hoisting
+
+// prueba2()
+
+// const prueba2 = () => {
+//   console.log("Hola")
+// }
+
+// Las funciones flecha si tienen 1 solo parametro, no es necesario poner los parentesis
+
+const test = (nombre) => {
+  console.log("Hola, ", nombre)
+}
+test("Hector")
+
+// Las funciones flecha si tienen 1 sola linea de codigo, no es necesario poner las llaves y el return, ya que tiene un return implicito
+
+const multiplicar = (a, b) => a * b
+
+const r = multiplicar(10, 5)
+console.log(r)
+
+// ==============================================
+/**
+ * Simulador interactivo
+ * Un simulador de creditos, un cotizador de seguros, un simulador de inversiones, etc.
+ * El usuario debe ingresar datos, y el sistema debe procesarlos y mostrarle los resultados
+ * Tienen que separar todo en funciones que solo hagan una cosa.
+ * Calcular costo total de productos y/o servicios seleccionados por el usuario.
+  Calcular pagos en cuotas sobre un monto determinado.
+  Calcular valor final de un producto seleccionado en función de impuestos y descuentos.
+  Calcular tiempo de espera promedio en relación con la cantidad de turnos registrados.
+  Calcular edad promedio de personas registradas.
+  Calcular nota final de alumnos ingresados.
+ */
